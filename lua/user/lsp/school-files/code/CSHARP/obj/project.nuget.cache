@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4kp3mJeNDTPbJXvzXecuj7tJLg7HhCD9hi56qmwvaImKgB5w2EZ2GOncmrqwJt9eWG3Yd31xjEtSWqrOx81jmg==",
+  "success": true,
+  "projectFilePath": "/home/jami/.config/nvim/lua/user/lsp/school-files/code/CSHARP/CSHARP.csproj",
+  "expectedPackageFiles": [
+    "/home/jami/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.2/microsoft.aspnetcore.app.ref.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

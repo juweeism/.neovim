@@ -1,1 +1,6 @@
-/home/jami/.config/nvim/init.lua
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colors"
+require "user.cmp"
+require "user.lsp"

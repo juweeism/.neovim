@@ -1,1 +1,0 @@
-/home/jami/.config/nvim/lua
