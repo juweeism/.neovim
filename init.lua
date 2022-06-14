@@ -1,0 +1,1 @@
+/home/jami/.config/nvim/init.lua
