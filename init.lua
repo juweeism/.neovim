@@ -1,3 +1,4 @@
+vim.o.termguicolors = true
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -8,3 +9,4 @@ require "user.autopairs"
 require "user.lualine"
 require "user.telescope"
 require "user.colorizer"
+require "user.nvimtree"
