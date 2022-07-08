@@ -41,6 +41,9 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- my shortcuts
 keymap("n", "nt", ":tabnew<CR>", opts)
+keymap("n", "ss", ":update<CR>", opts)
+keymap("n", "sx", ":q<CR>", opts)
+
 -- nvimtree
 keymap("n", "<leader>n", ":NvimTreeToggle<CR>", opts)
 -- telescope
