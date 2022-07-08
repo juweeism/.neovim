@@ -39,10 +39,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- my shortcuts
+
+------------ my shortcuts -------------
 keymap("n", "nt", ":tabnew<CR>", opts)
 keymap("n", "ss", ":update<CR>", opts)
-keymap("n", "sx", ":q<CR>", opts)
+keymap("n", "cc", ":q<CR>", opts)
+
 
 -- nvimtree
 keymap("n", "<leader>n", ":NvimTreeToggle<CR>", opts)
