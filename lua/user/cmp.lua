@@ -123,6 +123,17 @@ cmp.setup {
   experimental = {
     ghost_text = false,
     native_menu = false,
+  },
+  sorting = {
+	  comparators = {
+		  cmp.config.compare.offset,
+		  cmp.config.compare.exact,
+		  cmp.config.compare.score,
+          cmp.config.compare.kind,
+          cmp.config.compare.sort_text,
+          cmp.config.compare.length,
+          cmp.config.compare.order
+	  }
   }
 }
 

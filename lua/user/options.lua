@@ -31,7 +31,8 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
-  softtabstop = 4                          -- combine tabs and spaces
+  tabstop = 4,                              -- tab width
+  shiftwidth = 4
 }
 
 vim.opt.shortmess:append "c"
@@ -41,4 +42,5 @@ for k, v in pairs(options) do
 end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd "set clipboard^=unnamed,unnamedplus"
 vim.cmd [[set iskeyword+=-]]

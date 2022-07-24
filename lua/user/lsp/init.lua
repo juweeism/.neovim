@@ -6,3 +6,4 @@ end
 require("user.lsp.lsp-installer")
 require("user.lsp.handlers").setup()
 require "user.lsp.settings.emmet_ls"
+require "user.lsp.settings.intelephense"

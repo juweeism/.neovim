@@ -41,16 +41,17 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use "Th3Whit3Wolf/one-nvim"         --> colorscheme
-  use "wbthomason/packer.nvim"        --> Have packer manage itself
-  use "nvim-lua/popup.nvim"           --> An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"         --> Useful lua functions used ny lots of plugins
-  use "norcalli/nvim-colorizer.lua"   --> color highlighter for neovim
-  use "nvim-telescope/telescope.nvim" --> fuzzy file finder
-  use "windwp/nvim-autopairs"         --> autopair "" {} []
-  use "nvim-lualine/lualine.nvim"     --> statusline
-  use "kyazdani42/nvim-tree.lua"      --> a file explorer
-  use "kyazdani42/nvim-web-devicons"  --> file icons
+  use "dracula/vim"       --> colorscheme
+  use "wbthomason/packer.nvim"        	--> Have packer manage itself
+  use "nvim-lua/popup.nvim"           	--> An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"         	--> Useful lua functions used ny lots of plugins
+  use "norcalli/nvim-colorizer.lua"   	--> color highlighter for neovim
+  use "nvim-telescope/telescope.nvim" 	--> fuzzy file finder
+  use "windwp/nvim-autopairs"         	--> autopair "" {} []
+  use "nvim-lualine/lualine.nvim"     	--> statusline
+  use "kyazdani42/nvim-tree.lua"      	--> a file explorer
+  use "kyazdani42/nvim-web-devicons"  	--> file icons
+  use "folke/which-key.nvim"          	--> popup keybindings
   use {
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
