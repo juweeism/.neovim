@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -41,9 +40,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 
 ------------ my shortcuts -------------
-keymap("n", "nt", ":tabnew<CR>", opts)
-keymap("n", "ss", ":update<CR>", opts)
-keymap("n", "cc", ":q<CR>", opts)
+keymap("n", "nt", ":tabnew<CR>", opts)	-- new empty tab
+keymap("n", "ss", ":update<CR>", opts)	-- save file without closing
+keymap("n", "fn", ":w", opts)			-- set filename of new tab
+keymap("n", "zz", ":q<CR>", opts)		-- easy quit
 
 
 -- nvimtree
@@ -61,8 +61,8 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+keymap("v", "<E-j>", ":m .+1<CR>==", opts)
+keymap("v", "<E-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
