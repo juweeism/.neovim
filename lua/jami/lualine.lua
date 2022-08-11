@@ -6,17 +6,18 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#000001',
+  bg       = '#101010',
   fg       = '#ffffff',
   yellow   = '#c2a86c',
   cyan     = '#008080',
-  darkblue = '#444649',
+  darkblue = '#2f2f2f',
   green    = '#98be65',
   orange   = '#FF8800',
   violet   = '#a9a1e1',
   magenta  = '#c678dd',
   blue     = '#62718b',
   red      = '#ec5f67',
+  purple   = '#4a68ff',
 }
 
 local conditions = {
@@ -66,7 +67,10 @@ local config = {
     lualine_c = {},
     lualine_x = {},
   },
+	
+  extensions = {},
 }
+
 
 -- Inserts a component in lualine_c at left section
 local function ins_left(component)
@@ -80,9 +84,9 @@ end
 
 ins_left {
   function()
-    return '⣿⣿⣿⣿⣿'
+    return '█▓▒░'
   end,
-  color = { fg = colors.darkblue }, -- Sets highlighting of component
+  color = { fg = colors.purple }, -- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 
@@ -199,25 +203,30 @@ ins_right {
   color = { fg = colors.violet, gui = 'bold' },
 }
 
-ins_right {
-  'diff',
+-- ins_right {
+--  'diff',
   -- Is it me or the symbol for modified us really weird
-  symbols = { added = ' ', modified = '柳 ', removed = ' ' },
-  diff_color = {
-    added = { fg = colors.green },
-    modified = { fg = colors.orange },
-    removed = { fg = colors.red },
-  },
-  cond = conditions.hide_in_width,
-}
+--  symbols = { added = ' ', modified = '▦ ', removed = ' ' },
+--  diff_color = {
+--    added = { fg = colors.green },
+--    modified = { fg = colors.orange },
+--    removed = { fg = colors.red },
+--  },
+--  cond = conditions.hide_in_width,
+-- }
 
 ins_right {
   function()
-    return '⣿⣿⣿⣿⣿'
+    return '░▒▓█'
   end,
-  color = { fg = colors.darkblue },
+  color = { fg = colors.purple },
   padding = { left = 1 },
 }
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)
+
+
+
+-- vim.cmd("highlight lualine_a_tabs_active guifg=#000003 guibg=#667799")
+-- vim.cmd("highlight lualine_a_tabs_inactive guifg=#4d4d4d guibg=#1a1a1a")

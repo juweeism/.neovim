@@ -1,11 +1,24 @@
-vim.cmd("colorscheme base16-twilight")
-vim.cmd("highlight Normal guibg=#000000")
-vim.cmd("highlight CursorLine guibg=#000001")
-vim.cmd("highlight CursorLineNr guibg=#000001 guifg=#444649")
-vim.cmd("highlight LineNr guibg=#000000 guifg=#444649")
-vim.cmd("highlight NormalNC guibg=black")
-vim.cmd("highlight VertSplit guibg=black")
-vim.cmd("highlight Tabline guibg=#252525 guifg=#565656")
-vim.cmd("highlight TablineSel guifg=white guibg=#000000")
-vim.cmd("highlight TablineFill guibg=#000001")
-vim.cmd("highlight SignColumn guibg=black")
+local hi = vim.cmd
+hi("colorscheme base16-twilight")
+
+hi("highlight NormalNC guibg=NONE")
+hi("highlight LineNr guibg=none guifg=#444649")
+hi("highlight VertSplit guibg=NONE guifg=#303030")
+hi("highlight FoldColumn guibg=NONE")
+
+hi("highlight Tabline guibg=#252525 guifg=#565656")
+hi("highlight TablineSel guifg=white guibg=NONE")
+
+hi("highlight CursorLineNr guibg=NONE guifg=#444649")
+hi("highlight CursorLine guibg=#101010")
+hi("highlight TablineFill guibg=#000001")
+
+hi("highlight SignColumn guibg=NONE")
+hi("highlight SignColumn guibg=NONE")
+hi("highlight DiagnosticWarn guifg=#ffac30")
+hi("highlight DiagnosticError guifg=red")
+hi("highlight DiagnosticHint guifg=#c466ff")
+
+
+vim.g.limelight_conceal_guifg = '#555156'
+

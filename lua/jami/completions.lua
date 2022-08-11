@@ -17,7 +17,7 @@ local cmp = require'cmp'
       -- completion = cmp.config.window.bordered(),
       -- documentation = cmp.config.window.bordered(),
     },
-	 
+
     mapping = cmp.mapping.preset.insert({
    	["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
@@ -74,7 +74,7 @@ local cmp = require'cmp'
 	view = {                                                        
 		  entries = {name = 'custom', selection_order = 'near_cursor' } 
 	},
-	
+
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,

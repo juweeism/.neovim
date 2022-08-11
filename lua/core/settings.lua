@@ -14,16 +14,19 @@ o.scrolloff = 9
 o.sidescrolloff = 9
 o.showtabline = 2
 o.guitablabel= "%N %t %M" 
+o.hidden = true -- hides modified buffer 
+o.confirm = true -- confirm before close buffer
 
 opt.fillchars = {fold = " ", vert = " ", eob = " "}
 
 wo.number = true
-wo.relativenumber = true 
-wo.numberwidth = 6 
+wo.relativenumber = true
+wo.numberwidth = 4 
 wo.wrap = false
 wo.cursorline = true
+wo.signcolumn = 'yes:1'
 
-bo.tabstop = 3 
-bo.shiftwidth = 3 
+bo.tabstop = 3
+bo.shiftwidth = 3
 
 
