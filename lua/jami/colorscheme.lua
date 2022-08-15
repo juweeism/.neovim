@@ -1,5 +1,5 @@
 local hi = vim.cmd
-hi("colorscheme base16-twilight")
+hi("colorscheme base16-kimber")
 
 hi("highlight NormalNC guibg=NONE")
 hi("highlight LineNr guibg=none guifg=#444649")
@@ -16,9 +16,8 @@ hi("highlight TablineFill guibg=#000001")
 hi("highlight SignColumn guibg=NONE")
 hi("highlight SignColumn guibg=NONE")
 hi("highlight DiagnosticWarn guifg=#ffac30")
-hi("highlight DiagnosticError guifg=red")
+hi("highlight DiagnosticError guifg=##8C2408")
 hi("highlight DiagnosticHint guifg=#c466ff")
-
 
 vim.g.limelight_conceal_guifg = '#555156'
 

@@ -26,7 +26,8 @@ wo.wrap = false
 wo.cursorline = true
 wo.signcolumn = 'yes:1'
 
-bo.tabstop = 3
-bo.shiftwidth = 3
-
-
+o.tabstop = 3
+o.shiftwidth = 3
+o.autoindent = true
+o.smartindent = true
+					

@@ -79,6 +79,7 @@ require('bufferline').setup {
 }
 
 vim.cmd("hi BufferLineBufferSelected gui=bold")
-vim.cmd("hi BufferLineModified guifg=#309930")
-vim.cmd("hi BufferLineModifiedSelected guifg=#309930")
-vim.cmd("hi BufferLineIndicatorSelected guifg=#4a68ff")
+vim.cmd("hi BufferLineModified guifg=#216C4B")
+vim.cmd("hi BufferLineModifiedSelected guifg=#216C4B")
+vim.cmd("hi BufferLineIndicatorSelected guifg=#ffffff")
+vim.cmd("hi BufferLineFill guibg=none")

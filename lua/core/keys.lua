@@ -19,6 +19,8 @@ map("v", ">", ">gv", opt)			-- indent right
 map("v", "<E-j>", ":m .+1<CR>==", opt)		-- move text down 
 map("v", "<E-k>", ":m .-2<CR>==", opt)		-- move text up
 
+map("n", "cdp", ":cd %:p:h<CR>:pwd<CR>", opt)
+
 -- 	NAVIGATION 		-- 
 map("n", "<up>", "<C-w><up>", opt)
 map("n", "<down>", "<C-w><down>", opt)
