@@ -17,4 +17,5 @@ require("jami.lualine")
 require("lsp.config")
 require("jami.treesitter")		-- treesitter
 require("jami.telescope")		-- treesitter
+require("jami.null_ls")		-- linting and formatter
 
