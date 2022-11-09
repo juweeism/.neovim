@@ -13,7 +13,6 @@ require("jami.autopairs")		-- auto complete pairs ""(){}
 require("jami.completions")	-- completion for snippet lsp
 require("jami.nvimtree") 		-- file tree
 require("jami.lualine")
-require("jami.bufferline")
 
 require("lsp.config")
 require("jami.treesitter")		-- treesitter

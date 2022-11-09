@@ -1,7 +1,8 @@
 
-local use = require('packer').use
+vim.cmd [[packadd packer.nvim]]
 
-require('packer').startup({function()
+return require('packer').startup({function()
+   use 'wbthomason/packer.nvim'
 	use "RRethy/nvim-base16" 		-- colorscheme
 	use "norcalli/nvim-colorizer.lua"-- highlighter
 	use "windwp/nvim-autopairs" 		-- auto pair "" () {} 
